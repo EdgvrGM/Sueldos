@@ -4,16 +4,16 @@ var porcentaje;
 
 console.log(`Sueldo anterior: $${sueldo}`);
 
-if (sueldo > 0 && sueldo < 1000) {
+if (sueldo >= 0 && sueldo <= 1000) {
   porcentaje = 0.15;
   sueldo = sueldo + sueldo * porcentaje;
-} else if (sueldo > 1000 && sueldo < 1200) {
+} else if (sueldo >= 1001 && sueldo <= 1200) {
   porcentaje = 0.12;
   sueldo = sueldo + sueldo * porcentaje;
-} else if (sueldo > 1200 && sueldo < 1400) {
+} else if (sueldo >= 1201 && sueldo <= 1400) {
   porcentaje = 0.1;
   sueldo = sueldo + sueldo * porcentaje;
-} else if (sueldo > 1400 && sueldo < 1500) {
+} else if (sueldo >= 1401 && sueldo <= 1500) {
   porcentaje = 0.08;
   sueldo = sueldo + sueldo * porcentaje;
 } else if (sueldo > 1500) {
